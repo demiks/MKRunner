@@ -18,7 +18,6 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -240,7 +239,6 @@ public class MKLauncher extends JFrame {
 		fileList = SETING.getStringList("view-files");
 		if (fileList == null) {
 			fileList = new ArrayList<>();
-			fileList.add(new File("").getAbsolutePath() + File.separatorChar + "demo.mk");
 		}
 		for (String path : fileList) {
 			if (StringUtils.isEmpty(path))

@@ -311,7 +311,7 @@ public class LabPanel extends JScrollPane {
 				if (win != null && win.hasWindow()) {
 					win.stopRecording();
 					win.show();
-					win.setTitle(action.getWindowTitle());
+//					win.setTitle(action.getWindowTitle());
 					win.flashWindow(300);
 					win = null;
 					appendMsg("已解绑窗口");
@@ -326,7 +326,7 @@ public class LabPanel extends JScrollPane {
 				}
 				String cutFilePath = ViewUtils.cutFilePath(action.getFileName());
 				if (!StringUtils.isEmpty(cutFilePath))
-				 win.setTitle(action.getWindowTitle() + " -> " + cutFilePath);
+//				 win.setTitle(action.getWindowTitle() + " -> " + cutFilePath);
 				win.flashWindow(600);
 				appendMsg("已成功绑定窗口");
 			}
